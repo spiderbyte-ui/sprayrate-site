@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SprayRate Site
 
-## Getting Started
+Marketing site for SprayRate, built with:
 
-First, run the development server:
+- Next.js
+- TypeScript
+- Tailwind CSS
+- App Router
+- static export compatibility
+- Vercel compatibility
+
+## Pages
+
+- Home
+- Features
+- Pricing
+- About
+- Contact
+- Privacy Policy
+- Terms of Service
+- Beta Program
+
+## Local development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+This project uses `output: "export"` in `next.config.ts`, so `npm run build` produces a static export in `out/`.
 
-To learn more about Next.js, take a look at the following resources:
+## Deploy to Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Create a new Vercel project and import this repository.
+2. Keep the framework preset as `Next.js`.
+3. Build command: `npm run build`
+4. Output directory: `out`
+5. Deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deploy to any static host
 
-## Deploy on Vercel
+1. Run `npm run build`
+2. Upload the contents of `out/`
+3. Point your domain at the deployed site
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Recommended domain mapping
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `getsprayrate.com` -> this marketing site
+- `sprayrateapp.com` -> redirect to `getsprayrate.com`
+- `spiderbytelabs.com` -> company site or redirect target until a separate company site exists
