@@ -6,7 +6,7 @@ export default function BetaProgramPage() {
     <SiteChrome
       eyebrow="Beta Program"
       title="Founding beta access for a small group of aerial applicators."
-      intro="SprayRate is looking for 3 to 5 operators who are willing to test real workflows and share direct feedback on quoting, spray planning, and application records."
+      intro="SprayRate is looking for 3 to 5 operators who are willing to test real workflows and share direct feedback on quotes, spray plans, and application records."
     >
       <section className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
         <article className="glass-panel reveal-up p-8">
@@ -14,7 +14,7 @@ export default function BetaProgramPage() {
           <ul className="space-y-3 text-base leading-8 text-[var(--muted)]">
             <li>Early access to SprayRate during the founding beta period</li>
             <li>Direct line for product feedback</li>
-            <li>A chance to shape workflows before the public launch</li>
+            <li>A chance to shape the product before wider launch</li>
             <li>Founder-led support and follow-up</li>
           </ul>
         </article>
@@ -23,8 +23,8 @@ export default function BetaProgramPage() {
           <ul className="space-y-3 text-base leading-8 text-[var(--muted)]">
             <li>Honest notes on where the product helps</li>
             <li>Direct feedback on confusing or unrealistic flows</li>
-            <li>Real operator context around quoting and records</li>
-            <li>Practical suggestions, not polished pitch feedback</li>
+            <li>Real operator context around quotes, products, and records</li>
+            <li>Practical suggestions based on day-to-day work</li>
           </ul>
         </article>
       </section>
@@ -33,10 +33,10 @@ export default function BetaProgramPage() {
         <p className="section-label">Join</p>
         <h2 className="font-display text-3xl text-white">Interested in joining the founding beta?</h2>
         <p className="mt-4 max-w-3xl text-base leading-8 text-[var(--muted)]">
-          Email <span className="text-white">support@getsprayrate.com</span> with a
-          short note about your operation and current workflow. SprayRate is
-          especially interested in operators who actively quote jobs, plan spray
-          work, and keep application records.
+          Email <a className="text-white" href="mailto:support@getsprayrate.com">support@getsprayrate.com</a>{" "}
+          with a short note about your operation and current workflow. SprayRate
+          is especially interested in operators who actively quote jobs, plan
+          spray work, and keep application records.
         </p>
         <div className="mt-7">
           <Link href="/contact" className="button-primary">

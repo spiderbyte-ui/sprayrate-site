@@ -6,8 +6,8 @@ export default function PricingPage() {
   return (
     <SiteChrome
       eyebrow="Pricing"
-      title="Pricing is intentionally simple while the product is still being validated."
-      intro="SprayRate is in a founder-led beta stage. The goal right now is to learn from a small number of serious operators before public pricing is finalized."
+      title="Simple pricing while SprayRate is in beta."
+      intro="Right now, SprayRate is being tested with a small group of aerial applicators. Beta access is free while the product is still being improved."
     >
       <section className="grid gap-6 lg:grid-cols-2">
         {pricingTiers.map((tier, index) => (
@@ -25,15 +25,14 @@ export default function PricingPage() {
 
       <section className="mt-8 glass-panel reveal-up p-8 [animation-delay:180ms]">
         <p className="section-label">What to expect</p>
-        <h2 className="font-display text-3xl text-white">No inflated promises during beta.</h2>
+        <h2 className="font-display text-3xl text-white">What you get in beta</h2>
         <p className="mt-4 max-w-3xl text-base leading-8 text-[var(--muted)]">
-          Founding beta access is for operators willing to test real workflows and
-          give direct feedback. Public pricing will be set after the strongest use
-          cases and support expectations are clearer.
+          Beta testers get early access to SprayRate, direct support, and a
+          chance to help shape the product before wider launch.
         </p>
         <div className="mt-7">
           <Link href="/beta-program" className="button-primary">
-            Request Founding Beta Access
+            Request Beta Access
           </Link>
         </div>
       </section>

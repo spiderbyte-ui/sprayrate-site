@@ -9,24 +9,24 @@ export const navItems = [
 
 export const featureCards = [
   {
-    title: "Quote Generation",
-    text: "Build clean, professional quotes quickly without wrestling with spreadsheets in the truck or office.",
+    title: "Quote Builder",
+    text: "Create quotes faster without digging through spreadsheets or retyping the same information.",
   },
   {
     title: "Product Library",
-    text: "Keep product details and pricing inputs organized so repeat jobs take less effort.",
+    text: "Keep product names, rates, and pricing together so you know what you used and can reuse it on the next job.",
   },
   {
-    title: "Spray Planning",
-    text: "Turn job details into a usable spray plan with less back-and-forth and less guesswork.",
+    title: "Spray Plans",
+    text: "Build spray plans from the job details you already have so planning takes less back-and-forth.",
   },
   {
     title: "Application Records",
-    text: "Capture the details operators and businesses actually need to review, retain, and reference later.",
+    text: "Keep application records organized so you can look back quickly when a customer, employee, or regulator needs information.",
   },
   {
-    title: "Professional Exports",
-    text: "Export polished PDFs that look ready to share with customers, crews, and internal records.",
+    title: "Exports",
+    text: "Export clean PDFs for customers or your own files without piecing documents together by hand.",
   },
 ];
 
@@ -34,11 +34,11 @@ export const pricingTiers = [
   {
     name: "Founding Beta",
     price: "Free during beta",
-    detail: "For the first 3 to 5 operators helping shape the product with real workflow feedback.",
+    detail: "Free during beta for a small group of operators who are willing to test the app and share honest feedback.",
   },
   {
     name: "Launch Pricing",
     price: "TBD after beta",
-    detail: "Pricing will be finalized after feedback validates the highest-value workflows and support needs.",
+    detail: "Launch pricing will be announced after beta testing. For now, the focus is on making the product genuinely useful before setting long-term pricing.",
   },
 ];

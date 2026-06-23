@@ -15,6 +15,9 @@ export function SiteChrome({
 }) {
   return (
     <div className="min-h-screen bg-[radial-gradient(circle_at_top,#194b68_0%,#0d1f31_32%,#08131f_68%,#06101a_100%)] text-[var(--ink)]">
+      <a href="#main-content" className="skip-link">
+        Skip to content
+      </a>
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute left-[8%] top-24 h-64 w-64 rounded-full bg-[rgba(127,214,255,0.16)] blur-3xl" />
         <div className="absolute right-[10%] top-48 h-80 w-80 rounded-full bg-[rgba(249,185,102,0.14)] blur-3xl" />
@@ -36,7 +39,10 @@ export function SiteChrome({
                 </div>
               </div>
             </Link>
-            <nav className="flex flex-wrap gap-2 text-sm text-[var(--muted)]">
+            <nav
+              aria-label="Primary navigation"
+              className="flex flex-wrap gap-2 text-sm text-[var(--muted)]"
+            >
               {navItems.map((item) => (
                 <Link
                   key={item.href}
@@ -50,7 +56,7 @@ export function SiteChrome({
           </div>
         </header>
 
-        <main className="flex-1">
+        <main id="main-content" className="flex-1">
           <section className="mx-auto mb-10 max-w-4xl">
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.32em] text-[var(--accent)]">
               {eyebrow}

@@ -17,7 +17,7 @@ const displayFont = Space_Grotesk({
 export const metadata: Metadata = {
   title: "SprayRate | Built for Aerial Applicators",
   description:
-    "SprayRate is workflow software for aerial applicators focused on quote generation, spray planning, application records, and professional exports.",
+    "SprayRate helps aerial applicators create quotes, manage products, build spray plans, and keep application records organized.",
 };
 
 export default function RootLayout({

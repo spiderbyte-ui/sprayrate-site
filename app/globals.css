@@ -33,6 +33,12 @@ a {
   text-decoration: none;
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent-warm);
+  outline-offset: 3px;
+}
+
 .font-display {
   font-family: var(--font-display), sans-serif;
 }
@@ -113,6 +119,24 @@ a {
   animation: reveal-up 800ms ease forwards;
   opacity: 0;
   transform: translateY(18px);
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  z-index: 40;
+  border-radius: 999px;
+  background: white;
+  color: #06101a;
+  padding: 0.7rem 1rem;
+  font-weight: 600;
+  transform: translateY(-200%);
+  transition: transform 180ms ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
 }
 
 @keyframes reveal-up {

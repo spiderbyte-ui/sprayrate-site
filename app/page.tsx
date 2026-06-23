@@ -3,39 +3,50 @@ import { SiteChrome } from "@/components/site-chrome";
 import { featureCards } from "@/components/site-data";
 
 const screenshotCards = [
-  "Quote builder view",
-  "Spray planning workspace",
-  "Application record export",
+  {
+    title: "Home",
+    caption: "See your main tools in one place and jump into quotes, planning, records, and settings quickly.",
+  },
+  {
+    title: "Quote Builder",
+    caption:
+      "Create a quote without retyping the same customer, product, and pricing details every time.",
+  },
+  {
+    title: "Application Records",
+    caption:
+      "Keep application records organized so you can find what was done and what products were used.",
+  },
 ];
 
 export default function HomePage() {
   return (
     <SiteChrome
-      eyebrow="Launch-Ready Workflow Software"
-      title="Built for aerial applicators who need cleaner quotes, faster planning, and records they can trust."
-      intro="SprayRate helps aerial operators move from quote to spray plan to application record without bouncing between spreadsheets, notes, and patchwork exports."
+      eyebrow="Built for aerial applicators"
+      title="Create quotes, manage products, build spray plans, and keep application records organized."
+      intro="SprayRate helps aerial applicators put quotes, product information, spray plans, and application records in one place so day-to-day work is easier to manage."
     >
       <section className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="glass-panel reveal-up p-7 sm:p-9">
           <div className="mb-6 flex flex-wrap gap-3 text-xs uppercase tracking-[0.24em] text-[var(--muted)]">
-            <span className="pill">Mobile-first</span>
-            <span className="pill">Professional exports</span>
-            <span className="pill">Founder-led beta</span>
+            <span className="pill">Built for aerial applicators</span>
+            <span className="pill">Clean PDF exports</span>
+            <span className="pill">Real beta feedback</span>
           </div>
           <h2 className="font-display text-3xl font-semibold text-white sm:text-4xl">
-            Practical software for real operator workflows.
+            Made for the work you already do.
           </h2>
           <p className="mt-5 max-w-2xl text-base leading-8 text-[var(--muted)]">
-            SprayRate is focused on the work that matters most early in the job:
-            building the quote, shaping the spray plan, and keeping records in a
-            format that looks professional when it leaves the device.
+            Use SprayRate to create quotes faster, keep product details handy,
+            build spray plans, and pull up records when a customer calls with a
+            question.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link href="/beta-program" className="button-primary">
-              Join the Beta Program
+              Join the Beta
             </Link>
             <Link href="/features" className="button-secondary">
-              Explore Features
+              See Features
             </Link>
           </div>
         </div>
@@ -52,8 +63,9 @@ export default function HomePage() {
           <div className="grid gap-4">
             {screenshotCards.map((card, index) => (
               <div
-                key={card}
+                key={card.title}
                 className="relative overflow-hidden rounded-[1.5rem] border border-white/10 bg-[linear-gradient(160deg,rgba(255,255,255,0.05),rgba(11,21,32,0.65))] p-5"
+                aria-label={`${card.title} screenshot placeholder`}
               >
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(135,216,255,0.18),transparent_46%)]" />
                 <div className="relative flex items-center justify-between">
@@ -61,7 +73,10 @@ export default function HomePage() {
                     <p className="text-xs uppercase tracking-[0.28em] text-[var(--muted)]">
                       Screen 0{index + 1}
                     </p>
-                    <h3 className="mt-2 font-display text-xl text-white">{card}</h3>
+                    <h3 className="mt-2 font-display text-xl text-white">{card.title}</h3>
+                    <p className="mt-3 max-w-sm text-sm leading-7 text-[var(--muted)]">
+                      {card.caption}
+                    </p>
                   </div>
                   <div className="rounded-full border border-dashed border-[rgba(255,255,255,0.25)] px-4 py-2 text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
                     Replace with app capture
@@ -91,27 +106,27 @@ export default function HomePage() {
 
       <section className="mt-8 grid gap-6 lg:grid-cols-3">
         <article className="glass-panel reveal-up p-7">
-          <p className="section-label">Why teams look closer</p>
-          <h3 className="font-display text-2xl text-white">Professional output matters.</h3>
+          <p className="section-label">Why it helps</p>
+          <h3 className="font-display text-2xl text-white">Keep paperwork clear and easy to share.</h3>
           <p className="mt-4 text-sm leading-7 text-[var(--muted)]">
-            Operators do not just need data. They need deliverables that look like
-            they belong in front of customers, crews, and internal records.
+            When a customer asks for a quote or a record later, it helps to have
+            everything organized and ready to pull up quickly.
           </p>
         </article>
         <article className="glass-panel reveal-up p-7 [animation-delay:120ms]">
-          <p className="section-label">Aviation-inspired design</p>
-          <h3 className="font-display text-2xl text-white">Clear, disciplined, calm.</h3>
+          <p className="section-label">Built for the field</p>
+          <h3 className="font-display text-2xl text-white">Simple to use when the day is busy.</h3>
           <p className="mt-4 text-sm leading-7 text-[var(--muted)]">
-            The product and site are designed to feel precise and dependable,
-            borrowing from cockpit-style clarity instead of consumer-app clutter.
+            SprayRate is meant to help with day-to-day work, not slow you down
+            with extra steps or confusing screens.
           </p>
         </article>
         <article className="glass-panel reveal-up p-7 [animation-delay:240ms]">
-          <p className="section-label">Founder-led beta</p>
-          <h3 className="font-display text-2xl text-white">Small group, honest feedback.</h3>
+          <p className="section-label">Built with feedback</p>
+          <h3 className="font-display text-2xl text-white">Shaped by real operator input.</h3>
           <p className="mt-4 text-sm leading-7 text-[var(--muted)]">
-            SprayRate is currently recruiting a small number of aerial
-            applicators who will help shape what becomes launch-grade.
+            SprayRate is being improved through beta testing with real aerial
+            applicators so the product stays grounded in actual day-to-day work.
           </p>
         </article>
       </section>
