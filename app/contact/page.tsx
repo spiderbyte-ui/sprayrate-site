@@ -13,7 +13,8 @@ export default function ContactPage() {
           <h2 className="font-display text-3xl text-white">Beta and support</h2>
           <div className="mt-5 space-y-3 text-base text-[var(--muted)]">
             <p>Email: support@getsprayrate.com</p>
-            <p>Company: SpiderByte Labs</p>
+            <p>General: hello@spiderbytelabs.com</p>
+            <p>Operator: SpiderByte Labs</p>
             <p>Response style: direct, founder-led, beta-stage support</p>
           </div>
         </article>
